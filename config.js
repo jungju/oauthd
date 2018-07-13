@@ -1,5 +1,5 @@
 var config = {
-	host_url: "http://localhost:6284",		// mounted on this url
+	host_url: process.env.HOST_URL,		// mounted on this url
 	base: "/",								// add a base url path. e.g: "/auth"
 	base_api: "/api",						// api base path
 	port: 6284,
@@ -13,7 +13,7 @@ var config = {
 
 	redis: {
 		port: 6379,
-		host: 'redis',
+		host: process.env.REDIS_TCP_ADDR,
 		// password: '...my redis password...',
 		// database: ...0~15...
 		// options: {...other options...}
