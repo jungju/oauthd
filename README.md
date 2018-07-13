@@ -1,3 +1,20 @@
+# Update
+
+## feature
+- dockerize
+- customizable
+- add naver provider 
+
+## Usage
+```
+docker run -it -p 6284:6284 / 
+-e HOST_URL=http://localhost:6284 / 
+-e REDIS_TCP_ADDR=127.0.0.1 /
+-e STATIC_SALT=xxxx /
+-e PUBLIC_SALT=yyyy /
+jungju/oauthd
+```
+
 [![Build Status](https://travis-ci.org/oauth-io/oauthd.svg?branch=master)](https://travis-ci.org/oauth-io/oauthd)  [![npm version](https://badge.fury.io/js/oauthd.svg)](https://badge.fury.io/js/oauthd) [![dependencies Status](https://david-dm.org/oauth-io/oauthd/status.svg)](https://david-dm.org/oauth-io/oauthd)
 
 

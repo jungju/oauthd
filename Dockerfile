@@ -1,6 +1,7 @@
 #ref https://github.com/beerendlauwers/oauthd-docker
 
-FROM node:6
+#olny node:6 
+FROM node:6 
 
 RUN npm install -g grunt-cli
 RUN npm install -g https://github.com/jungju/oauthd/tarball/master
@@ -16,4 +17,4 @@ RUN cd ./plugins/front && npm install
 ADD config.js ./
 
 EXPOSE 6284
-RUN ["oauthd", "-v"]
+ENTRYPOINT ["oauthd", "start"]

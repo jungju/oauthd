@@ -8,8 +8,8 @@ var config = {
 	debug: false,							// add stack trace & infos in errors
 
 
-	staticsalt: 'i m a random string, change me.',
-	publicsalt: 'i m another random string, change me.',
+	staticsalt: process.env.STATIC_SALT,
+	publicsalt: process.env.PUBLIC_SALT,
 
 	redis: {
 		port: 6379,
