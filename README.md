@@ -1,4 +1,4 @@
-# Update
+# oauthd (jungju)
 
 ## feature
 - dockerize
@@ -6,6 +6,12 @@
 - add naver provider 
 
 ## Usage
+- fork this repository
+- Edit Dockerfile
+```
+RUN npm install -g https://github.com/{Your Repo}/tarball/master
+```
+- Docker build & run
 ```
 docker run -it -p 6284:6284 / 
 -e HOST_URL=http://localhost:6284 / 
