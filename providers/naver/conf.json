@@ -1,0 +1,25 @@
+{
+	"name": "Naver",
+	"desc": "Naver",
+	"url": "https://nid.naver.com",
+	"oauth2": {
+		"authorize": "/oauth2.0/authorize",
+		"access_token": "/oauth2.0/token",
+		"request": {
+			"cors": true
+		},
+		"refresh": "/oauth/token",
+		"revoke": {
+		"url": "/oauth/token"
+		},
+		"parameters": {
+			"client_id": "string"
+		}
+	},
+	"href": {
+		"keys": "https://developers.naver.com",
+		"docs": "https://developers.naver.com/docs",
+		"apps": "https://developers.naver.com",
+		"provider": "https://naver.com/"
+	}
+}

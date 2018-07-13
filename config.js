@@ -13,7 +13,7 @@ var config = {
 
 	redis: {
 		port: 6379,
-		host: 'some-redis',
+		host: 'redis',
 		// password: '...my redis password...',
 		// database: ...0~15...
 		// options: {...other options...}

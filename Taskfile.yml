@@ -1,0 +1,3 @@
+dev:
+  cmds:
+    - docker run -it -p 6284:6284 --link test some-redis
